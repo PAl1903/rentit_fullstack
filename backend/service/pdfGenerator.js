@@ -27,4 +27,4 @@ async function generateReceiptPDF(bookingDetails) {
     return pdfBytes;
 }
 
-module.exports = generateReceiptPDF;
+module.exports = {generateReceiptPDF};

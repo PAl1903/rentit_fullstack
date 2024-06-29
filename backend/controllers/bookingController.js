@@ -3,8 +3,8 @@ const Booking = require("../models/bookingModel");
 const Car = require("../models/carModel");
 const ErrorHandler = require("../utils/errorHandler");
 const stripe = require('stripe')("sk_test_51MD4fISAnNDrfpjkwWC3y9OBlvRiAU5dTuxjD5zXxxQzvtWFBZicKXfNniiKJKqLTjE6X85yJYtqNrlTJBregocI009FqdBmnc")
-const generateReceiptPDF = require("../service/pdfGenerator");
-const sendEmailWithAttachment = require("../service/emailService");
+const {generateReceiptPDF} = require("../service/pdfGenerator");
+const {sendEmailWithAttachment} = require("../service/emailService");
 
 
 // Book Car

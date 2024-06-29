@@ -6,13 +6,13 @@ async function sendEmailWithAttachment(toEmail, subject, text, filename, content
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'partiklal99@gmail.com',
-            pass: 'Dave@1708',
+            user: 'meet.d.ghodasara@gmail.com',
+            pass: process.env.EMAIL_PASS,
         },
     });
 
     const mailOptions = {
-        from: 'partiklal99@gmail.com',
+        from: 'meet.d.ghodasara@gmail.com',
         to: toEmail,
         subject: subject,
         text: text,
